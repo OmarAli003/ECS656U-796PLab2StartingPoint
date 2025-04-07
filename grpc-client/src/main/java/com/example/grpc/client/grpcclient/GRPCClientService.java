@@ -1,5 +1,5 @@
 package com.example.grpc.client.grpcclient;
-
+ 
 import com.example.grpc.server.grpcserver.PingRequest;
 import com.example.grpc.server.grpcserver.PongResponse;
 import com.example.grpc.server.grpcserver.PingPongServiceGrpc;
@@ -43,8 +43,8 @@ public class GRPCClientService {
 			.build());
 		String resp= A.getC00()+" "+A.getC01()+"<br>"+A.getC10()+" "+A.getC11()+"\n";
 		return resp;
-
-    public String multiply(){
+    }
+public String multiply(){
 		ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",9090)
 		.usePlaintext()
 		.build();
